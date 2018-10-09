@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.canyinghao.canrefresh.CanRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.canyinghao.canrefresh.classic.ClassicRefreshView
+        android:id="@id/can_refresh_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/can_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/ll_none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/base_text_color_light"
+            android:text="暂无数据"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/empty"/>
+    </LinearLayout>
+
+
+</com.canyinghao.canrefresh.CanRefreshLayout>

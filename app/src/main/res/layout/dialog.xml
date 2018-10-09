@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="17dp"
+        android:textColor="#FC573F"
+        android:textSize="18dp"
+        android:text="选择日期"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="279dp"
+        android:layout_height="201dp">
+<NumberPicker
+    android:textColor="#FC573F"
+    android:id="@+id/np1"
+    android:layout_width="93dp"
+    android:layout_height="201dp"></NumberPicker>
+    <NumberPicker
+        android:textColor="#FC573F"
+        android:id="@+id/np2"
+        android:layout_width="93dp"
+        android:layout_height="201dp"></NumberPicker>
+    <NumberPicker
+        android:textColor="#FC573F"
+        android:id="@+id/np3"
+        android:layout_width="93dp"
+        android:layout_height="201dp"></NumberPicker>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/shape3"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="#ffffff"
+            android:text="取消"
+            android:id="@+id/dialog_back"
+            android:layout_width="139dp"
+            android:layout_height="43dp" />
+
+        <Button
+            android:background="#ffffff"
+            android:text="确定"
+            android:id="@+id/dialog_confirm"
+            android:layout_width="139dp"
+            android:layout_height="43dp" />
+    </LinearLayout>
+</LinearLayout>

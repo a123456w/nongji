@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="30dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_shadow"
+    android:layout_margin="15dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+    <com.guo.qlzx.nongji.client.Costom.PasswordInputEdt
+        android:id="@+id/et_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        app:numLength="6"
+        app:isPwd="true"
+        app:autoCloseKeyBoard="true"
+        app:isNumber="true"
+        app:widthSpace="5dp"
+        app:rectStroke="2dp"
+        app:txtSize="15sp"
+        app:circleRadius="5dp"
+        app:bgFill="false"
+        app:textColor="@color/textcolor3"
+        app:rectNormalColor="@color/textcolor9"
+        app:rectChooseColor="@color/orangeRed"
+        app:pwdType="CIRCLE"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@drawable/selector_enable_btn"
+        android:enabled="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="确认解绑"
+        android:layout_margin="30dp"/>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="346dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_refuel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="加油"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_times"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="3月20日" />
+
+            </LinearLayout>
+
+            <TextView
+                android:textColor="#B6B6B6"
+                android:textSize="12dp"
+                android:id="@+id/tv_remark"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="3月20日" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginRight="14dp">
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-260" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="#efefef"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

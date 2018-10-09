@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="170dp"
+    android:layout_marginBottom="252dp"
+    android:layout_marginLeft="35dp"
+    android:layout_marginTop="239dp"
+    android:background="@drawable/shap_yuanjiaos"
+    android:orientation="vertical">
+    <TextView
+        android:layout_gravity="center"
+        android:textColor="#FC573F"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:text="请输入" />
+    <EditText
+        android:hint="请输入您想要添加的信息"
+        android:id="@+id/ed_ad"
+        android:gravity="center"
+        android:maxLength="5"
+        android:background="@drawable/shape_gary_three_hollow"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:layout_width="296dp"
+        android:layout_height="40dp" />
+    <View
+        android:layout_marginTop="20dp"
+        android:background="#efefef"
+        android:layout_width="296dp"
+        android:layout_height="2dp"></View>
+    <LinearLayout
+        android:layout_width="296dp"
+        android:layout_height="38dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:textColor="#686A6C"
+            android:textSize="15sp"
+            android:id="@+id/but_cants"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消" />
+        <View
+            android:background="#efefef"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"></View>
+        <Button
+            android:layout_gravity="center"
+            android:textColor="@color/red"
+            android:textSize="15sp"
+            android:id="@+id/but_cans"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确认" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="170dp"
+    android:layout_marginBottom="252dp"
+    android:layout_marginLeft="35dp"
+    android:layout_marginTop="239dp"
+    android:background="@drawable/shap_yuanjiaos"
+    android:orientation="vertical">
+    <TextView
+        android:layout_gravity="center"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="38dp"
+        android:text="是否确认已经保养过？" />
+    <LinearLayout
+        android:layout_width="296dp"
+        android:layout_height="38dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_marginLeft="30dp"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:id="@+id/but_que"
+            android:background="@drawable/shape_red_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确定" />
+        <Button
+
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="15sp"
+            android:id="@+id/but_fan"
+            android:background="@drawable/shape_gary_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="返回" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    tools:context="com.guo.qlzx.nongji.client.activity.RechargeActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFFFFF"
+        android:layout_width="346dp"
+        android:layout_height="304dp">
+
+
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="28dp">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_recharge"
+                android:layout_width="16dp"
+                android:layout_height="17dp" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:text="充值金额:"
+                android:layout_width="75dp"
+                android:textSize="15sp"
+                android:layout_height="21dp" />
+
+             <TextView
+                 android:layout_gravity="center_vertical"
+
+                 android:text="￥"
+                 android:textSize="20sp"
+                 android:layout_width="20dp"
+                 android:layout_height="28dp" />
+             <EditText
+                 android:textSize="20sp"
+                 android:layout_width="match_parent"
+                 android:layout_height="28dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="28dp">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_suo"
+                android:layout_width="16dp"
+                android:layout_height="17dp" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:text="交易密码:"
+                android:layout_width="75dp"
+                android:textSize="15sp"
+                android:layout_height="21dp" />
+
+
+            <EditText
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="37dp"
+            android:text="充值方式:"
+            android:layout_marginLeft="21dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

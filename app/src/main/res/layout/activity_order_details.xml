@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guo.qlzx.nongji.service.activity.OrderDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="161dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="19dp"
+                        android:src="@drawable/ic_ordernumber" />
+
+                    <TextView
+                        android:id="@+id/tv_order_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:text="订单编号:E20180531BRT010A"
+                        android:textColor="@color/textcolor3"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:id="@+id/but_recharge"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/shape_red_three"
+                        android:text="充值记录"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/lineColor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="7dp"
+                        android:src="@drawable/ic_personage" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:text="李明"
+                        android:textColor="@color/textcolor3"
+                        android:textSize="13sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:gravity="center"
+                            android:text="2018-5-30"
+                            android:textColor="@color/textcolor6"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="7dp"
+                        android:src="@drawable/ic_time" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:text="2018-03-15至2018-06-20（10天）"
+                        android:textColor="@color/textcolor3"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ordertime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:text="订单剩余时间:"
+                        android:textColor="@color/textcolor6"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/ordertime"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/ordertime"
+                        android:textColor="@color/textcolor3"
+                        android:textSize="18sp"
+                        tools:text="30天" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/gv_goods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="10dp"
+                android:numColumns="2" />
+
+            <LinearLayout
+                android:id="@+id/ll_liner"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:text="订单金额:"
+                    android:textColor="@color/textcolor6"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:text="¥"
+                    android:textColor="@color/textcolor3"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_memory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:text="300"
+                    android:textColor="@color/textcolor3"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp"
+                android:text="机器号码"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <com.qlzx.mylibrary.widget.NoScrollGridView
+                android:id="@+id/gv_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:numColumns="5"></com.qlzx.mylibrary.widget.NoScrollGridView>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#efefef" />
+        <!--饼状图 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="作业贡献"
+            android:textColor="@color/textcolor3"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/main_title_backgroud" />
+
+        <com.qlzx.mylibrary.widget.MyLinearLayout
+            android:id="@+id/ll_view"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pic_sum"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="25dp" />
+
+            <ListView
+                android:id="@+id/pic_list"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginRight="31dp"
+                android:divider="@null" />
+        </com.qlzx.mylibrary.widget.MyLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#efefef" />
+        <!--总 线型图-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_total_work" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="订单总捆数（捆）"
+                android:textColor="@color/textcolor3"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/line_sum"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#efefef" />
+        <!--总数 柱状图-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_total_work" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="作业总捆数（捆）"
+                android:textColor="@color/textcolor3"
+                android:textSize="11sp" />
+        </LinearLayout>
+        <!--这里放图表-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.guo.qlzx.nongji.service.costom.MyHorizontalScrollView
+                android:id="@+id/hv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/chart_sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp" />
+                </LinearLayout>
+            </com.guo.qlzx.nongji.service.costom.MyHorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/ll_chart1"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_chart1_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text=""
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_chart1_center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right|center"
+                        android:text=""
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="right|bottom"
+                        android:text="0"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginTop="25dp"
+                    android:background="#000000"></View>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!--合计作业时间 图表-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_total_work" />
+
+                <TextView
+                    style="@style/LogRecordDetailsTextViewStyles"
+                    android:text="平均作业时间（小时/天）" />
+            </LinearLayout>
+            <!--这里放图表-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.guo.qlzx.nongji.service.costom.MyHorizontalScrollView
+                    android:id="@+id/hv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/chart_efficiency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp" />
+                    </LinearLayout>
+                </com.guo.qlzx.nongji.service.costom.MyHorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="bottom">
+
+                    <LinearLayout
+                        android:id="@+id/ll_chart2"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="bottom">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="35dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_chart2_top"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="top"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text=""
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/tv_chart2_center"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="right|center"
+                                android:text=""
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="1"
+                                android:gravity="right|bottom"
+                                android:text="0"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0.1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="35dp"
+                            android:layout_marginTop="25dp"
+                            android:background="#000000"></View>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <!--图表-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_total_work" />
+
+                <TextView
+                    style="@style/LogRecordDetailsTextViewStyles"
+                    android:text="平均作业效率（小时/天）" />
+            </LinearLayout>
+            <!--这里放图表-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.guo.qlzx.nongji.service.costom.MyHorizontalScrollView
+                    android:id="@+id/hv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/chart_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp" />
+                    </LinearLayout>
+                </com.guo.qlzx.nongji.service.costom.MyHorizontalScrollView>
+
+                <LinearLayout
+                    android:id="@+id/ll_chart3"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="bottom">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="35dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_chart3_top"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_chart3_center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:text=""
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:gravity="right|bottom"
+                            android:text="0"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="35dp"
+                        android:layout_marginTop="25dp"
+                        android:background="#000000"></View>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

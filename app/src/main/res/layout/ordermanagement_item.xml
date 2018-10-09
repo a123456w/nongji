@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/bg_shadow">
+
+        <ImageView
+            android:background="@drawable/rizhi_bg"
+            android:id="@+id/machineimages"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:textColor="#333333"
+            android:id="@+id/tv_machinedetails"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            tools:text="A机器" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="7dp"
+                    android:src="@drawable/ic_name" />
+
+                <TextView
+                    android:textSize="13sp"
+                    android:textColor="#666666"
+                    android:id="@+id/tv_machinistdetails"
+                    android:layout_width="104dp"
+                    android:layout_height="17dp"
+                    tools:text="机手"
+                    android:lines="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="17dp"
+                    android:layout_marginRight="7dp"
+                    android:src="@drawable/ic_binding" />
+
+                <TextView
+                    android:textSize="13sp"
+                    android:textColor="#666666"
+                    android:id="@+id/tv_number"
+                    android:layout_width="104dp"
+                    android:layout_height="17dp"
+                    tools:text="作业捆绑数"
+                    android:lines="1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/im_delete"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_delete" />
+    </LinearLayout>
+</LinearLayout>

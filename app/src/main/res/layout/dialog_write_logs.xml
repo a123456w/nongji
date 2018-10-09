@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="170dp"
+    android:layout_marginBottom="252dp"
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp"
+    android:layout_marginTop="239dp"
+    android:background="@drawable/shap_yuanjiaos"
+    android:orientation="vertical">
+    <TextView
+        android:layout_gravity="center"
+        android:textColor="#323233"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:text="当前账号在其他手机登录，请重新登录" />
+    <View
+        android:background="#efefef"
+        android:layout_width="296dp"
+        android:layout_height="2dp"></View>
+    <LinearLayout
+        android:layout_width="296dp"
+        android:layout_height="38dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:textColor="#686A6C"
+            android:textSize="15sp"
+            android:id="@+id/but_can"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消" />
+        <View
+            android:background="#efefef"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"></View>
+        <Button
+            android:textSize="15sp"
+            android:textColor="#E71213"
+            android:id="@+id/but_com"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确定" />
+
+    </LinearLayout>
+</LinearLayout>

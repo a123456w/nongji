@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="47dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="4dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/huangse_tankuang" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            style="@style/colorffffff_size9"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="3" />
+
+        <TextView
+            android:id="@+id/tv_bale_num"
+            style="@style/colorffffff_size9"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="6"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="45dp"
+            android:layout_height="26dp"
+            android:layout_below="@id/iv_bg"
+            android:scaleType="fitXY"
+            android:src="@drawable/jiqi_tubiao" />
+    </RelativeLayout>
+</LinearLayout>
+
+
+
+
+

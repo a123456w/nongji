@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PasswordInputEdt">
+        <attr name="numLength" format="integer" />              <!-- 输入位数的长度-->
+        <attr name="isPwd" format="boolean" />                  <!-- 是否显示为密码-->
+        <attr name="autoCloseKeyBoard" format="boolean" />      <!-- 输入完成后是否自动关闭键盘-->
+        <attr name="isNumber" format="boolean" />               <!-- 是否只能输入数字-->
+        <attr name="widthSpace" format="dimension" />           <!-- 框框之间的横向间隙-->
+        <attr name="heightSpace" format="dimension" />          <!-- 框框之间的纵向间隙-->
+        <attr name="rectStroke" format="dimension" />           <!-- 框框的宽度-->
+        <attr name="txtSize" format="dimension" />              <!-- 字体的大小-->
+        <attr name="circleRadius" format="dimension" />         <!-- 密码格式中圆形的半径-->
+        <attr name="bgFill" format="boolean" />                 <!-- 框框是否附带背景-->
+        <attr name="textColor" format="color" />                <!-- 字体的颜色-->
+        <attr name="rectNormalColor" format="color" />          <!-- 框框没选中时候默认的颜色-->
+        <attr name="rectChooseColor" format="color" />          <!-- 框框选中时候默认的颜色-->
+        <attr name="pwdType" format="enum" >                    <!-- 密码的类型：圆或者*号-->
+            <enum name="CIRCLE" value="0"/>
+            <enum name="XINGHAO" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

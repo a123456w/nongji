@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_scontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <include layout="@layout/line" />
+
+    <RadioGroup
+        android:id="@+id/rg_sbottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:checkedButton="@id/rb_shome"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_shome"
+            style="@style/bottomTabStyle"
+            android:drawableTop="@drawable/select_home"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_slogreo"
+            style="@style/bottomTabStyle"
+            android:drawableTop="@drawable/select_logreco"
+            android:text="日志" />
+
+        <RadioButton
+            android:id="@+id/rb_stechnic"
+            style="@style/bottomTabStyle"
+            android:drawableTop="@drawable/select_technic"
+            android:text="技术支持" />
+
+        <RadioButton
+            android:id="@+id/rb_sorder"
+            style="@style/bottomTabStyle"
+            android:drawableTop="@drawable/selector_declare"
+            android:text="故障申报" />
+
+    </RadioGroup>
+
+</LinearLayout>
+

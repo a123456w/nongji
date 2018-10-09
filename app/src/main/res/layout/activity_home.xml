@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <include layout="@layout/line"/>
+
+    <RadioGroup
+        android:id="@+id/rg_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:checkedButton="@+id/rb_home">
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/bottomTabStyle"
+            android:drawableTop="@drawable/select_home"
+            android:text="首页" />
+        <RadioButton
+            android:id="@+id/rb_logreo"
+            style="@style/bottomTabStyle"
+            android:drawableTop="@drawable/select_logreco"
+            android:text="日志" />
+        <RadioButton
+            android:id="@+id/rb_technic"
+            style="@style/bottomTabStyle"
+            android:drawableTop="@drawable/select_technic"
+            android:text="技术支持" />
+        <RadioButton
+            android:id="@+id/rb_order"
+            style="@style/bottomTabStyle"
+            android:drawableTop="@drawable/select_order"
+            android:text="订单" />
+
+    </RadioGroup>
+
+</LinearLayout>
+

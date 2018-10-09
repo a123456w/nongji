@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginLeft="13dp"
+    android:layout_marginRight="13dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/ic_machineimage"
+        android:src="@drawable/ic_jiqi"
+        android:layout_width="85dp"
+        android:layout_height="68dp"/>
+<LinearLayout
+    android:layout_width="100dp"
+    android:layout_height="68dp"
+    android:orientation="vertical">
+  <TextView
+      android:id="@+id/tv_robot"
+      android:layout_marginBottom="3dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="A99"/>
+    <TextView
+        android:id="@+id/tv_owner"
+        android:layout_marginBottom="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="机主:张三三"/>
+    <TextView
+        android:id="@+id/tv_serve"
+        android:layout_marginBottom="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务：王五五"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_tractordriver"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="机手：李四四"/>
+        <TextView
+            android:id="@+id/servetrim"
+            android:layout_marginLeft="32sp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上次服务：2018-5-29"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

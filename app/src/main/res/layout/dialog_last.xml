@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="170dp"
+    android:layout_marginBottom="252dp"
+    android:layout_marginLeft="35dp"
+    android:layout_marginTop="239dp"
+    android:background="@drawable/shap_yuanjiaos"
+    android:orientation="vertical">
+    <TextView
+        android:layout_gravity="center"
+        android:textColor="#FC573F"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:text="删除内容" />
+    <TextView
+        android:text="对不起，您不能删除最后一台机器"
+        android:id="@+id/tv_jiqi"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="20dp"
+        android:background="#efefef"
+        android:layout_width="296dp"
+        android:layout_height="2dp"></View>
+    <LinearLayout
+        android:layout_width="296dp"
+        android:layout_height="38dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:textColor="#686A6C"
+            android:textSize="15sp"
+            android:id="@+id/but_cants"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消" />
+        <View
+            android:background="#efefef"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"></View>
+        <Button
+            android:layout_gravity="center"
+            android:textColor="@color/red"
+            android:textSize="15sp"
+            android:id="@+id/but_cans"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="仍然要删除" />
+    </LinearLayout>
+
+
+</LinearLayout>

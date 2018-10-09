@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.guo.qlzx.nongji">
+
+    <!-- 地图SDK（包含其搜索功能）需要的基础权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!--
+高德开放平台：15101072285 或qq号2521432015登陆
+密码：El22334455
+    -->
+    <application
+        android:name=".commen.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.guo.qlzx.nongji.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path" />
+        </provider>
+
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="24987338" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="9096d5fc57803787398bf438d216d96f" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCJnifXeelOzQ4D5Af8Wh5SAlpeCXEhq08S79GVQmwl7oAL+iGDZgid0016eI0c53r+vBGq6MmNROwZkGE3J4NKKBTDNgdm1Hic4OvvPaqxQdUu78gGFEj7mJaBmKsJdas3fzWWKqsYreCfVigKtebKTw0oczeE5LXA4n1Kv1mQhQv2aZxdt8MstRV8bzg2SE6yKydrcpAijeTzIu/X2kjiA9XFtRa8vl25mg82uDbeARctfm0PiJff6vDHgEv1XryK2okntFLkG1sFepDUZOMNNcM1iX2XM2M+yRZZJuRC4yhb4svHi/hJiHqnYlgoNIawQIu/DbP0tLZluM9/MPnFAgMBAAECggEAasia97s0Sx4X4vL9M1YmMtJ6ln9TFqIb8IDAKsZorqI7H5AOkywIQZblhsOmE6iWqrT6LJkHVCQH4+pBVQ/G8zLYsYTqB2OU13479N7v5S1FI2+R0Q3Kd9e16YeyJ9vzaFPAG+6t5q99HYY3+d+d3puqhRmqGedyFOJqACcsc1N1OG/4eM6UfhlzC3YSj/3rXUd0ififq4KNVVJsBLUX5gRNoNsOIGXw3iwHByMZAkCHQob5WVOpmfPcHdjYFq2PatcoRCJEwhaMRY1toAuIMtBXFocKm9fAEZkOiUgEfMY3Q1xXiWbGVD7BFhu+4ggKDL/UYaAo7Xd5L2DSwYlG/QKBgQDNSdT+JAXogXTJvVoONOM8mp5UXDR5Cae4WRTL2xcd7c6x0ra2wUyfcgpBmiVzwxG8AhWpqdiql3neHh3UibgClMzaB9Ha5MpUmNYffMzL48IjaVgCZ+E8bvno/llpc92FW8eab2TU3jER96K06457TH6IsogsnaHzfBg8vdRNCwKBgQCrnOxok/Ds1WrO676pp76r0BTlx37XQkncUXwQWT5cE4isX3xLHQ6I2hSL/GwZcEaTHlRUla60No7lCKz3exZwI4nyGh4t0BHcNnoMrr50SpaqzYloCmn6gTYCJ70iljk7MGAVzdGcLC7Xo6CVC/6HXa/0MOFbt2JOpoCUrTH2bwKBgA43AJKgd/BDloypmeTF8L4vjqsUv2VqL7zqHjCHeTBPWTKi/pflBqM7yE4GmHVNmprEIi/fXOtjFcM1nqcq6hzzpMOsKvHXSdNVye3gPGYZ3UWKc9emzcfbf16MzjApH7uuQUIGWJsMz6UI2rFgZjtPbquUgS1ltOMhQqRiGKNFAoGAA2l4Tc/7L0pC+GA5hzf9k37sm3Du9aqsu0Ones+7bKs6wWqYlwm520CyveHD6HGSBaTJunDLa2vWRXl5ruX0mUArovOf+/syD7XJkWz7/mXpPvYdMENcvg1JnJtbqE9iTen1TxmrfDZorALl03DMm7ZiJDHAmUk5HCU1Uz9qSeMCgYAxzev43ILStyxl3lyPJR/0DeE99w3oYNFtrEkzJJDjq8jKUEozRcDohSv4KmgbxOYcvXF6m6OKeqvTE8snkTsaL748Xc8wBOrgP6gx3HpiiM93d8oo3GrR71CDtNnCkMB6PLjZpKB/K1e6SuqkG0xRMlSPDsRR9enVkr2RyHKlLQ==" />
+        <!-- 高德地图配置key值 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="fe542c72f454d794e4e257dbda09a50a" />
+
+        <!-- 高德 定位 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <!-- 服务端——登录 -->
+        <activity android:name=".commen.activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 引导页 -->
+        <activity android:name=".commen.activity.GuideActivity" />
+        <!-- 登录 -->
+        <activity
+            android:name=".commen.activity.LoginActivity"
+            android:launchMode="singleTask" />
+        <!-- 客户端-主页面 -->
+        <activity android:name=".client.activity.ShomeActivity" />
+        <!-- 客户端个人中心 -->
+        <activity android:name=".client.activity.SPersonalCentercActivity" />
+        <!-- 客户端——优惠码兑换 -->
+        <activity android:name=".client.activity.ConcessionExchangeActivity" />
+        <!-- 客户端——随手记 -->
+        <activity android:name=".client.activity.NotewithhandActivity" />
+        <!-- 客户端——作业记录 -->
+        <activity android:name=".client.activity.JobrecordActivity" />
+        <!-- 客户端——钱包 -->
+        <activity android:name=".client.activity.WalletActivity" />
+        <!-- 客户端——更改支付密码 -->
+        <activity android:name=".client.activity.ChangePayPasswordWordActivity" />
+        <!-- 客户端 ——故障申报记录 -->
+        <activity android:name=".client.activity.DeclareRecordActivity" />
+        <!-- 服务端——个人中心 -->
+        <activity android:name=".service.activity.PersonalCenterActivity" />
+        <!-- 服务端——注册 -->
+        <activity android:name=".commen.activity.RegActivity" />
+        <!-- 服务端——管理系统 -->
+        <activity android:name=".service.activity.ManageMentActivity" />
+        <!-- 服务端——修改密码 -->
+        <activity android:name=".service.activity.StorageChgPassword" />
+        <!-- 客户端——作业记录 -->
+        <activity android:name=".client.activity.RechargeActivity" />
+        <!-- 客户端——银行卡跳转解绑页面 -->
+        <activity android:name=".client.activity.UntieActivity" />
+        <!-- 客户端——添加银行卡 -->
+        <!-- 服务端——管理系统详情 -->
+        <activity android:name=".service.activity.OrderManageMentActivity" />
+        <!-- 服务端——管理系统详情添加 -->
+        <activity android:name=".service.activity.AddMachinistActivity" />
+        <!-- 服务端——主首页Activity -->
+        <activity android:name=".service.activity.HomeActivity" />
+        <!-- 服务端——技术支持使用说明-使用帮助 -->
+        <!-- 服务端——技术支持-服务日志 -->
+        <activity android:name=".service.activity.LogsSrrvicesActivity" />
+        <!-- 服务端——技术支持-服务日志维护保养 -->
+        <activity android:name=".service.activity.MaintainingActivity" />
+        <!-- 消息中心 -->
+        <activity android:name=".service.activity.MessageActivity" />
+        <!-- 服务端——技术支持 -->
+        <activity android:name=".service.activity.MaintenanceDetailsActivity" />
+        <!-- 消息详情 -->
+        <activity android:name=".service.activity.MessageDetailsActivity" />
+        <!-- 日志-右上角-统计 -->
+        <activity android:name=".service.activity.StatisticsActivity" />
+        <!-- 机器保养详情-零件保养 -->
+        <activity android:name=".service.activity.PartsDetailsActivity" />
+        <!-- 订单页面——订单详情 -->
+        <activity android:name=".service.activity.OrderDetails" />
+        <!-- 订单页面——订单详情充值页面 -->
+        <activity android:name=".service.activity.RechargeRecordActivity" />
+        <!-- 订单页面——帮助中心 -->
+        <activity android:name=".service.activity.HelpCenterActivity" />
+        <!-- 日志-列表详情 -->
+        <activity android:name=".service.activity.LogRecordDetailsActivity" />
+
+        <!-- 客户端-嵌套的订单页面 -->
+        <activity android:name=".service.activity.ServeOrderActivity" />
+        <!-- 客户端-钱包的提现 -->
+        <activity android:name=".client.activity.WithdrawDdepositActivity" />
+        <!-- 客户端-钱包的添加银行卡 -->
+        <activity android:name=".client.activity.BankActivity" />
+        <!-- 随手记 -->
+        <activity android:name=".client.activity.RememberActivity" />
+        <!-- 网页 -->
+        <activity android:name=".client.activity.WebActivity" />
+        <!-- 添加银行卡 -->
+        <activity android:name=".client.activity.AddBankActivity" />
+
+        <!-- 服务日志详情 -->
+        <activity android:name=".service.activity.LogsAsrvicesDetailsActivity" />
+        <!-- 完成添加银行卡 -->
+        <activity android:name=".client.activity.FinishBankActivity" />
+        <!-- 银行卡详情 -->
+        <activity android:name=".client.activity.BankDetailsActivity" />
+        <!-- 解绑 -->
+        <activity android:name=".client.activity.UnBindBankCardActivity" />
+        <activity android:name=".commen.activity.ForgetPasswordActivity" />
+        <activity android:name=".commen.activity.FeedbackActivity" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".commen.activity.PartyLoginActivity" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="gh8OtxT1oym3qNNo" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".client.activity.ManualActivity"></activity>
+    </application>
+
+</manifest>

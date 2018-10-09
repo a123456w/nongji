@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/shape_white_three"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:elevation="5dp"
+            android:translationZ="0dp"
+            android:transformPivotY="5dp"
+            android:transformPivotX="2dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:id="@+id/tv_mac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_toLeftOf="@id/ll_mac"
+                    android:textColor="@color/textcolor3"
+                    android:text="机器：" />
+                <LinearLayout
+                    android:id="@+id/ll_mac"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/shape_gary_three_hollow"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/tv_mac_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/textView"
+                        android:layout_toRightOf="@+id/textView"
+                        android:layout_weight="1"
+                        android:lines="1" />
+                    <ImageView
+                        android:id="@+id/iv_mac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"
+                        android:src="@drawable/ic_down"
+                        android:layout_marginRight="8dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/ll_mac"
+                    android:layout_toRightOf="@id/tv_mac"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="7dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前捆数："
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/textcolor3"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:id="@+id/tv_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textcolor6"
+                        android:textSize="12sp"
+                        android:lines="1"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/ll_mac_number"
+                    android:text="机器号："
+                    android:textColor="@color/textcolor3"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_mac_number"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/shape_gary_three_hollow"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_mac_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:lines="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_mac_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_down"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textSize="14sp"
+                    android:layout_toLeftOf="@id/ll_mac_part"
+                    android:textColor="@color/textcolor3"
+                    android:text="故障部位："
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:id="@+id/ll_mac_part"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/shape_gary_three_hollow"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/tv_mac_part"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:lines="1"/>
+                    <ImageView
+                        android:id="@+id/iv_mac_part"
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"
+                        android:src="@drawable/ic_down"
+                        android:layout_marginRight="8dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/textcolor3"
+                    android:text="上传照片：" />
+                <com.qlzx.mylibrary.widget.NoScrollGridView
+                    android:id="@+id/gv_pic"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:numColumns="2">
+                </com.qlzx.mylibrary.widget.NoScrollGridView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textSize="14sp"
+                    android:layout_toLeftOf="@id/tv_content"
+                    android:textColor="@color/textcolor3"
+                    android:text="故障简单描述："
+                    android:id="@+id/textView" />
+                <EditText
+                    android:id="@+id/tv_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="180dp"
+                    android:layout_height="95dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="left"
+                    android:maxLength="100"
+                    android:textSize="13sp"
+                    android:textColor="@color/textcolor6"
+                    android:windowSoftInputMode="adjustPan"
+                    android:background="@drawable/shape_gary_three_hollow">
+                </EditText>
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_red_btn"
+                android:textSize="15sp"
+                android:text="提 交"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_issue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:text="常见问题解决办法"
+                android:textSize="12sp"
+                android:textColor="@color/blue_15"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

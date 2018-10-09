@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guo.qlzx.nongji.service.costom.SwipeItemLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/ll_content"
+        app:layout_itemType="main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:textColor="@color/textcolor3"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            tools:text="123"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_e5"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_delete"
+        app:layout_itemType="menu"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
+        android:text="删除"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/red_e7"/>
+</com.guo.qlzx.nongji.service.costom.SwipeItemLayout>

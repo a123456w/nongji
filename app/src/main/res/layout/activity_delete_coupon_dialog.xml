@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="280dp"
+    android:layout_gravity="center"
+    android:background="@drawable/shap"
+    android:orientation="vertical"
+    tools:context="com.guo.qlzx.nongji.service.activity.ReplaceCouponDialog">
+
+    <TextView
+        android:id="@+id/tv_rema"
+        android:layout_width="200dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#efefef" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but_cancel"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/shap1"
+            android:text="取消"
+            android:textColor="#e71a2c" />
+
+        <Button
+            android:id="@+id/determine"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_red_three"
+            android:text="确定"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+</LinearLayout>

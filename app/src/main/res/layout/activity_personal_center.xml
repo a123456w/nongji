@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efefef"
+    tools:context="com.guo.qlzx.nongji.service.activity.PersonalCenterActivity">
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ln_system"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+        <ImageView
+            android:src="@drawable/ic_guanli"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="19dp"
+            android:layout_height="18dp" />
+        <TextView
+            android:textSize="13sp"
+            android:text="管理系统"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor3"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="19dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_go" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vi_c"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"
+        android:layout_marginLeft="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/ln_changepwd"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+        <ImageView
+            android:src="@drawable/ic_xiugaimima"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="19dp"
+            android:layout_height="18dp" />
+        <TextView
+            android:textSize="13sp"
+            android:text="修改密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor3"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="19dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_go" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+    <TextView
+        android:id="@+id/tv_off"
+        android:background="#ffffff"
+        android:textSize="14sp"
+        android:textColor="@color/textcolor3"
+        android:text="退出登录"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        />
+</LinearLayout>

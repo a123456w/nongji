@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.guo.qlzx.nongji.service.fragment.HomePageFragment">
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginRight="17dp"
+            android:layout_marginLeft="17dp"
+            android:id="@+id/tv_servelog"
+            android:layout_marginTop="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/ic_servelog"
+                android:layout_marginRight="14dp"
+                android:layout_width="19dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:text="服务日志"
+                android:layout_marginRight="220dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_imes"
+                android:src="@drawable/ic_mes"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+
+                    android:layout_alignParentRight="true"
+                    android:layout_width="19dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_go" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:id="@+id/vi_a"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="15dp"
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_marginRight="17dp"
+            android:layout_marginLeft="17dp"
+            android:id="@+id/tv_maintain"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/ic_maintaining"
+                android:layout_marginRight="14dp"
+                android:layout_width="19dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:text="维护保养"
+                android:layout_marginRight="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="19dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_go" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:id="@+id/vi_b"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="15dp"
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginLeft="17dp"
+            android:id="@+id/tv_helps"
+            android:layout_marginTop="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/ic_help"
+                android:layout_marginRight="14dp"
+                android:layout_width="19dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:text="使用帮助"
+                android:layout_marginRight="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="19dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_go" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

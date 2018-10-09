@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="126dp"
+        android:layout_height="126dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_codeperson" />
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="21dp"
+                android:layout_gravity="center_vertical"
+                android:text="持 卡 人:"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_code" />
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="21dp"
+                android:layout_gravity="center_vertical"
+                android:text="卡    号:"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_suo" />
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="21dp"
+                android:layout_gravity="center_vertical"
+                android:text="交易密码:"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="298dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="26dp"
+            android:background="#f00"
+            android:text="下一步"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+

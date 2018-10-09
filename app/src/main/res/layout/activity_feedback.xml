@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical"
+    tools:context=".commen.activity.FeedbackActivity">
+    <RelativeLayout
+        android:layout_marginBottom="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:layout_marginTop="15dp"
+            android:id="@+id/ed_content"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:textSize="13sp"
+            android:textColor="@color/textcolor6"
+            android:hint="在此输入内容"
+            android:gravity="left"
+            android:maxLength="150"
+            android:windowSoftInputMode="adjustPan"
+           >
+        </EditText>
+    </RelativeLayout>
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+    <TextView
+        android:textColor="@color/textcolor6"
+        android:layout_marginTop="15dp"
+        android:text="      上传图片"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp">
+        <GridView
+            android:id="@+id/gv_pic"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:layout_marginBottom="50dp">
+        </GridView>
+    </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="22dp"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_red_org_three"
+        android:textSize="15sp"
+        android:text="确 定"
+        android:textStyle="bold"/>
+</LinearLayout>

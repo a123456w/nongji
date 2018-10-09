@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionSheetDialogStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground" >@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+         <item name="android:windowIsFloating">true</item> 
+         <item name="android:windowContentOverlay">@null</item>  
+           <item name="android:scrollHorizontally">true</item>  
+
+    </style>
+    <style   name="fiveRatingBar" parent="@android:style/Widget.RatingBar">
+        <item   name="android:progressDrawable">@drawable/five_rating_bar</item>
+        <item   name="android:minHeight">20dp</item>
+        <item   name="android:maxHeight">30dp</item>
+    </style>
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@android:color/background_dark</item>
+        <item name="colorControlActivated">@android:color/background_dark</item>
+    </style>
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+</resources>

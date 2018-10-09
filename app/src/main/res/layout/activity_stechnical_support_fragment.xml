@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.guo.qlzx.nongji.service.fragment.HomePageFragment">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginRight="17dp"
+            android:layout_marginLeft="17dp"
+            android:id="@+id/tv_tending"
+            android:layout_marginTop="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/ic_maintaining"
+                android:layout_marginRight="14dp"
+                android:layout_width="19dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:text="维护保养"
+                android:layout_marginRight="200dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="19dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_go" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="15dp"
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_marginRight="17dp"
+            android:layout_marginLeft="17dp"
+            android:id="@+id/ln_usermanual"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/ic_shou"
+                android:layout_marginRight="14dp"
+                android:layout_width="19dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:text="用户手册"
+                android:layout_marginRight="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="19dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_go" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="15dp"
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_marginRight="17dp"
+            android:layout_marginLeft="17dp"
+            android:id="@+id/ln_maintenance"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/ic_bao"
+                android:layout_marginRight="14dp"
+                android:layout_width="19dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:text="保养说明"
+                android:layout_marginRight="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="19dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_go" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="15dp"
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_marginRight="17dp"
+            android:layout_marginLeft="17dp"
+            android:id="@+id/ln_faq"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/ic_faq"
+                android:layout_marginRight="14dp"
+                android:layout_width="19dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:text="常见问题"
+                android:layout_marginRight="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="19dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_go" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="15dp"
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginLeft="17dp"
+            android:paddingBottom="12dp"
+            android:id="@+id/ln_feedback"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/ic_feedback"
+                android:layout_marginRight="14dp"
+                android:layout_width="19dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:text="意见反馈"
+                android:layout_marginRight="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="19dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_go" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
